@@ -1,7 +1,7 @@
 # genomic_cotton
 This repository contain the advances of the project *Genomics effects of domestication in Gossypium hirsutum* whitch is directed by this workflow focused of the analysis of structural variants in whole genome:
 
-https://github.com/Melcatus/genomic_cotton/blob/master/Workflow.png
+![textlink](https://github.com/Melcatus/genomic_cotton/blob/master/Workflow.png)
 
 #### Data characteristics
 - WGS
