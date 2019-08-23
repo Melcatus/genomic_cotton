@@ -7,4 +7,4 @@ Sample
 [E04](https://trace.ncbi.nlm.nih.gov/Traces/sra/?run=SRR1536364)
 
 
-for identify samples review file ![id_samples](https://github.com/Melcatus/genomic_cotton/blob/master/meta/id_samples.txt)
+for identify of samples, review file ![id_samples](https://github.com/Melcatus/genomic_cotton/blob/master/meta/id_samples.txt)

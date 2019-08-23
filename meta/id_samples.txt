@@ -17,3 +17,6 @@ D02	Oaxaca
 D03	Oaxaca
 D04	Oaxaca
 C04	Guerrero 
+E02	Stoneville 474
+E03	coker 312
+E04	Fibermax 832 
