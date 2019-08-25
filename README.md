@@ -40,7 +40,7 @@ This repository contain the scripts generated in the project *Genomics effects o
 
 *[/bin/](https://github.com/Melcatus/genomic_cotton/tree/master/bin)*
 
-This directory contains the necessary scripts for realize the structural, step by step of workflow
+This directory contains the necessary scripts for realize the structural variant analysis. Each script correspond to a step of workflow.
 
 *[/data/](https://github.com/Melcatus/genomic_cotton/tree/master/data)*
 
