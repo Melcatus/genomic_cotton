@@ -19,7 +19,7 @@ This repository contain the scripts generated in the project *Genomics effects o
 
 [Samtools 1.7](http://samtools.sourceforge.net/)
 
-[FindVariants](http://ngsep.sourceforge.net/ManualNGSEP.htm)
+[FindVariants](http://ngsep.sourceforge.net/ManualNGSEP.htm#_Toc374444744)
 
 [CGTDV](http://circos.ca/software/)
 
