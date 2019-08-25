@@ -29,12 +29,12 @@ This repository contain the scripts generated in the project *Genomics effects o
  ```
 +-- genomic_cotton
 |	+--bin/
-|                   +--download_seq.sh
+|               +--download_seq.sh
 |	+--data/
-|                   +-- README_data.md
+|               +-- README_data.md
 |	+--meta/
-|                   +--id_samples.txt
-|                   +--general_expo_project.pdf
+|               +--id_samples.txt
+|               +--general_expo_project.pdf
 ```
 
 
