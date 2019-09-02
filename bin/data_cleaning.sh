@@ -7,7 +7,7 @@
 # 1. Create output directories 
 mkdir ../data/clean
 
-# 2. Create a vector containing the unique  pice of the file name (in word character) before the "_" 
+# 2. Create a array containing the unique  pice of the file name (in word character) before the "_" 
 
 fileprefix=$(ls ../data | grep -oE "\w*"_ | uniq)
 
