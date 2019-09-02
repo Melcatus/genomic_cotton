@@ -5,11 +5,16 @@
 # Prerequisites: install BBTools 38.49
 
 # 1. Create output directories 
-mkdir ../data/seq_clean
-mkdir ../data/seq_clean/R1
-mkdir ../data/seq_clean/R2
+mkdir ../data/clean
 
-# 2. Eliminate adapters
-for i in *.fastq.gz;
-do bbduk.sh -Xmx2g threads=1 in1=../data/R1/$i in2=../data/R2/$i out1=../data/seq_clean/R1/$i out2=../data/R2/$i ref=/resources/adapters.fa tpe tbo
+# 2. Create a vector containing the unique  pice of the file name (in word character) before the "_" 
+
+fileprefix=$(ls ../data | grep -oE "\w*"_ | uniq)
+
+# 3. Eliminate adapters
+
+for i in $fileprefix;
+do bbmap/bbduk.sh -Xmx2g threads=1 in1=../data/${R}1.fastq.gz in2=../data/${R}2.fastq.gz out1=../data/clean/${R}1.fastq.gz out2=../data/clean/${R}2.fastq.gz ref=/bbmap/resources/adapters.fa tpe tbo;
+done
+
 
