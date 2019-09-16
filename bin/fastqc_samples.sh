@@ -1,8 +1,11 @@
 #!/bin/bash
 
-#This script do the quality analysis of sequencing with fastqc
+# This script do the quality analysis of sequencing with fastqc
+# Create output directory
+mkdir ../data/fastqcs
 
-for i in ../data/raw/*.fastq.gz;
-do fastqc $i -o ./
+# Do analysis sequences quality 
+for i in ../data/samples/*.fq.gz;
+do fastqc $i -o ../data/fastqcs
 done
 

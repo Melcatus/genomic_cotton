@@ -13,7 +13,7 @@ This repository contain the scripts generated in the project *Genomics effects o
 
 [fastqc_v0.11.8](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)
 
-[BBMap_38.49](https://jgi.doe.gov/data-and-tools/bbtools/bb-tools-user-guide/)
+[trim_galore 0.4.4_dev](https://www.bioinformatics.babraham.ac.uk/projects/trim_galore/)
 
 [bwa0.7.17-r1188](http://bio-bwa.sourceforge.net/)
 
