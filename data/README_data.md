@@ -1,8 +1,26 @@
 #### This directory no contain files, but direct you to repository in where found the accessions analyze in this work.
 
-Sample
+*This study include two types of data: resequencing of wilds and landraces individuals of Mexico and accession of others works*
 
-[E01](https://www.ncbi.nlm.nih.gov/Traces/wgs/VCQX01?display=history)
+The resequencing samples are: 
+
+A01
+
+C01
+
+A02
+
+A03
+
+C02
+
+The accessions analyzed of other works:  
+
+[A04](https://trace.ncbi.nlm.nih.gov/Traces/sra/?run=SRR1975549)
+
+[A05](https://trace.ncbi.nlm.nih.gov/Traces/sra/?run=SRR1536369)
+
+[E01](ftp://ftp.bioinfo.wsu.edu/species/Gossypium_hirsutum/ZJU_G.hirsutum_AD1genome_v2.1)
 
 [E02](https://trace.ncbi.nlm.nih.gov/Traces/sra/?run=SRR1536367)
 
