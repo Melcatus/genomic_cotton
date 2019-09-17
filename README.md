@@ -30,6 +30,9 @@ This repository contain the scripts generated in the project *Genomics effects o
 +-- genomic_cotton
 |	+--bin/
 |               +--download_seq.sh
+|               +--fastqc_samples.sh
+|               +--clean_mydata.sh
+|               +--mapping.sh
 |	+--data/
 |               +-- README_data.md
 |	+--meta/
