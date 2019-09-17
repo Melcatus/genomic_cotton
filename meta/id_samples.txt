@@ -7,10 +7,10 @@ C02	GhGueV
 E01	ZM24
 E02	TM-1 
 A04	yucatanense 
-B01	Yucatán  
-B02	Yucatán 
-B03	Yucatán 
-B04	Yucatán
+B01	Yucatan  
+B02	Yucatan 
+B03	Yucatan 
+B04	Yucatan
 C03	Guerrero 
 D01	Guerrero 
 D02	Oaxaca
