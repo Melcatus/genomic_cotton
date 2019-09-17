@@ -20,7 +20,7 @@ The accessions analyzed of other works:
 
 [A05](https://trace.ncbi.nlm.nih.gov/Traces/sra/?run=SRR1536369)
 
-[E01](ftp://ftp.bioinfo.wsu.edu/species/Gossypium_hirsutum/ZJU_G.hirsutum_AD1genome_v2.1)
+[E01](https://www.cottongen.org/data/download/genome_tetraploid/AD1)
 
 [E02](https://trace.ncbi.nlm.nih.gov/Traces/sra/?run=SRR1536367)
 
