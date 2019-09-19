@@ -1,9 +1,5 @@
 #!/bin/bash
 
-#SBATCH -p keri
-#SBATCH -n 8
-#SBATCH --mem=10500
-
 # This script is for data cleaning using trim_galore.
 # Run this script from directory /bin/  and  the sequences they are in /data/raw/mydata/
 # Prerequisites: install trim_galore 0.4.4_dev
