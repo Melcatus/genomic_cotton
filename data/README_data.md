@@ -1,6 +1,6 @@
 #### This directory contain: 
 
----> Directory with files for do genome annotation with can be consulted in page of [CottonGen](https://www.cottongen.org/data/download/genome_tetraploid/AD1#CM)
+---> [Directory with files for do genome annotation](https://github.com/Melcatus/genomic_cotton/tree/master/data/annotation) ( all available files can be consulted in page of [CottonGen](https://www.cottongen.org/data/download/genome_tetraploid/AD1#CM) )
 
 #### And, direct you to repository in where found the accessions analyze in this work.
 
