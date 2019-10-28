@@ -4,7 +4,7 @@
 
 In the last few years, the analysis about genetic diversity between populations had been marked by the study of the single nucleotid polymorphism (SNPs). With the increase of the resolution and the number of reads by sample, longer regions have been studied.
 
-(link image1)
+![textlink](https://github.com/Melcatus/genomic_cotton/blob/master/methods_sequencing.jpg)
 
 Figure 1. Copy number variant size distribution and discovery methods ([Alkan et al. 2011](https://www.ncbi.nlm.nih.gov/pubmed/21358748))
 
@@ -19,7 +19,7 @@ The change in the genome compared to a reference genome that has a different cop
 
  in more detail,  Alkan et al. 2011 describe SV like:
 
- https://github.com/Melcatus/genomic_cotton/blob/master/structural_variants.jpg
+ ![textlink](https://github.com/Melcatus/genomic_cotton/blob/master/structural_variants.jpg)
 
  Figure 2. Classes of SV.
 
@@ -41,7 +41,7 @@ They are several methods to find SV, these are (Chen et al. 2009; Sindi et al. 2
 Because each variant can present different complications for identification, it has been proposed that in general it be used *paired-end mapping* or *de novo assembly*, but, the software to identify each variant can be different.
 
 
-https://github.com/Melcatus/genomic_cotton/blob/master/different_methods.jpg
+![textlink](https://github.com/Melcatus/genomic_cotton/blob/master/different_methods.jpg)
 
 
 Figure 3. Two major NGS approaches to detect SVs (Saxena et al. 2014). PAV= presence-absence variation.
