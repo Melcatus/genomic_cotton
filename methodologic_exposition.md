@@ -9,20 +9,17 @@ In the last few years, the analysis about genetic diversity between populations 
 Figure 1. Copy number variant size distribution and discovery methods ([Alkan et al. 2011](https://www.ncbi.nlm.nih.gov/pubmed/21358748))
 
 
-The change in the genome compared to a reference genome that has a different copy number, orientation, or chromosomal location, is defined as structural variant (SV), that can be 100-1000 bp ().  Structural variants can be classified as:
+The change in the genome compared to a reference genome that has a different copy number, orientation, or chromosomal location, is defined as structural variant (SV), that can be 100-1000 bp (Fuentes et al. 2019).  Structural variants can be classified as:
 
  - deletions
-
  - insertions
-
  - duplications
-
  - inversions
-
  - translocations
 
  in more detail,  Alkan et al. 2011 describe SV like:
- (link image)
+
+ https://github.com/Melcatus/genomic_cotton/blob/master/structural_variants.jpg
 
  Figure 2. Classes of SV.
 
@@ -43,26 +40,24 @@ They are several methods to find SV, these are (Chen et al. 2009; Sindi et al. 2
 
 Because each variant can present different complications for identification, it has been proposed that in general it be used *paired-end mapping* or *de novo assembly*, but, the software to identify each variant can be different.
 
-(link)
+
+https://github.com/Melcatus/genomic_cotton/blob/master/different_methods.jpg
+
 
 Figure 3. Two major NGS approaches to detect SVs (Saxena et al. 2014). PAV= presence-absence variation.
 
 One of them is NGSEP that include parameters like:
 
 - LENGTH:  Predicted length of the event
-
 - SOURCE: Algorithm that originated each variant call
-
 - NSF: Number of fragments supporting the structural variation event
-
 - NTADF: For CNVs called with the read depth algorithms this is the number of paired-end fragments showing an alignment pattern consistent with a tandem duplication
-
 - And others ...
 
 The comand that use this software is
 
 ```
-java -jar NGSEPcore.jar FindVariants -maxAlnsPerStartPos 100 <REFERENCE> <BAM_FILE> 
+java -jar NGSEPcore.jar FindVariants -maxAlnsPerStartPos 100 <REFERENCE> <BAM_FILE>
 
 ```
 
