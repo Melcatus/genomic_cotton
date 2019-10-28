@@ -1,4 +1,8 @@
-#### This directory no contain files, but direct you to repository in where found the accessions analyze in this work.
+#### This directory contain: 
+
+---> [Directory with files for do genome annotation](https://github.com/Melcatus/genomic_cotton/tree/master/data/annotation) ( all available files can be consulted in page of [CottonGen](https://www.cottongen.org/data/download/genome_tetraploid/AD1#CM) )
+
+#### And, direct you to repository in where found the accessions analyze in this work.
 
 *This study include two types of data: resequencing of wilds and landraces individuals of Mexico and accession of others works*
 
