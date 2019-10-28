@@ -66,7 +66,7 @@ java -jar NGSEPcore.jar FindVariants -maxAlnsPerStartPos 100 <REFERENCE> <BAM_FI
 
 ```
 
-This step of our workflow is crucial because the parameters that describe the biology of the analyzed specie must be chosen and the sequencing characteristics indicated, if done properly the probability of false positivesis decreased.
+This step of our workflow is crucial because the parameters that describe the biology of the analyzed specie must be chosen and the sequencing characteristics indicated, if done properly the probability of false positives is decreased.
 
 ```
 -maxAlnsPerStartPos: Maximum number of alignments allowed to start at the same reference site. This parameter helps to control false positives produced by PCR amplification artifacts.
@@ -78,7 +78,7 @@ This step of our workflow is crucial because the parameters that describe the bi
 
 It has been observed that the complexity of genomes (ploidy) and characteristics such as the high number of transposable elements, can generate different results depending on the variant that is analyzed and its length, so it has been suggested that each variant be searched through of sensitive software to each one.
 
-For example, in *Oryza*, it was used DELLY, GROM and LUMPY for langer variants and, MetaSV and MindTheGap for short insertions. The results showed 63 millon of SV (Fuentes et al. 2019), compared to the previous study in which they foun 90, 000 SV (Wang et al. 2018).
+For example, in *Oryza*, it was used DELLY, GROM and LUMPY for longer variants and, MetaSV and MindTheGap for short insertions. The results showed 63 millon of SV (Fuentes et al. 2019), compared to the previous study in which they foun 90, 000 SV (Wang et al. 2018).
 
 ![textlink](https://github.com/Melcatus/genomic_cotton/blob/master/F1.large.jpg)   
 
@@ -93,7 +93,7 @@ After identify the SV is necesary to validate through PCR or with other referenc
 Figure 6. PCR validation of CNVs in OsMADS56 and BPH14 (rice). a Schematic gene structure and CNV position of OsMADS56. F1: 5’TCGTCGAGCCATTTCGGG-3’ and R1: 5’-CCATTTGTAGTCTCGCACGCTC-3’. (Bai et al. 2016)
 
 
-And, next, we annotated the protein coding genes that overlapped with structural variations as they may have substantial functional consequences owing to the potential effect of the variations on gene structure. (Table of Bai et al. 2016)
+And, next, we annotated the protein coding genes that overlapped with structural variants as they may have substantial functional consequences owing to the potential effect of the variations on gene structure. (Table of Bai et al. 2016)
 
 ![textlink](https://github.com/Melcatus/genomic_cotton/blob/master/cnvdataset.jpg)
 
