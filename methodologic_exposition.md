@@ -77,3 +77,7 @@ For example, in *Oryza*, it was used DELLY, GROM and LUMPY for langer variants a
 ![textlink](https://github.com/Melcatus/genomic_cotton/blob/master/F1.large.jpg)   
 
 Figure 5. Distribution and classification of SVs. (A) Frequency of observations per SV cluster. Only 562 high-coverage samples were used for insertion detection. (B) Distribution of variant sizes by SV type. (C) Classification of variants in each peak (cluster frequency > 10 samples). (D) Frequencies of events with 98% sequence identity to known or potentially active TEs in rice. (Fuentes et al. 2019)
+
+In summary, carrying out a study of structural variants requires the definition of several parameters, software and sequencing methods that can modify the results causing a misinterpretation when linking with phenotypes, so an indepth analysis is required to make decisions about the method you will follow.
+
+![textlink](https://github.com/Melcatus/genomic_cotton/blob/master/Variation-across-the-pseudo-chromosomes-by-Circos-A-Unique-structure-variations-SVs.png)
