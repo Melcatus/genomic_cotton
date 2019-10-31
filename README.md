@@ -56,6 +56,18 @@ This repository contain the scripts generated in the project *Genomics effects o
 *[/bin/](https://github.com/Melcatus/genomic_cotton/tree/master/bin)*
 
 This directory contains the necessary scripts for do the structural variant analysis. Each script correspond to a step of workflow.
+Description each script:
+
+*  `1_download_seq.sh` to download sequences of projects in NCBI
+* `2_fastqc_samples.sh` to do the quality analysis of sequencing with fastqc
+* `3_clean_mydata.sh` to data cleaning using trim_galore
+* `4_mapping.sh` to mapping samples against the reference genome whith bwa
+* `5_convert_sam_to_bam.sh` to onvert file .sam to .bam with samtools
+* `6_sort_sequences.sh` to order reads after mapping
+* `7_convert_bam_fasta.sh` to convert files .bam generated mapping to .fasta
+* `8_quality_mapping.sh` to evaluate the quality of mapping
+* `9_find_variants.sh` to find structural variants
+
 
 *[/data/](https://github.com/Melcatus/genomic_cotton/tree/master/data)*
 

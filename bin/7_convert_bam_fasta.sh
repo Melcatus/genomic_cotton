@@ -1,6 +1,7 @@
 #!/bin/bash
 
-#create output directory 
+# this script convert files .bam to .fasta
+# create output directory 
 mkdir ../data/raw/mydata/clean/fastas 
 
 # convert file bam in fasta

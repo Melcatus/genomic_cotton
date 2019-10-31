@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# This script 
+# This script order reads after mapping
 # Prerequisite: install samtools 1.9
 # Working directory is /bin/
 # Files .sam generated from mapping is ../data/raw/mydata/clean/bams/
