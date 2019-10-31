@@ -29,12 +29,24 @@ This repository contain the scripts generated in the project *Genomics effects o
  ```
 +-- genomic_cotton
 |	+--bin/
-|               +--download_seq.sh
-|               +--fastqc_samples.sh
-|               +--clean_mydata.sh
-|               +--mapping.sh
+|               +--1_download_seq.sh
+|               +--2_fastqc_samples.sh
+|               +--3_clean_mydata.sh
+|               +--4_mapping.sh
+|               +--5_convert_sam_to_bam.sh
+|               +--6_sort_sequences.sh
+|               +--7_convert_bam_fasta.sh
+|               +--8_quality_mapping.sh
+|               +--9_find_variants.sh
 |	+--data/
 |               +-- README_data.md
+|	      +--annotation/
+|               +--README_annotation.md
+|               +--Predicted gene alignments_TM-1_V2.1.gene.gff.gz
+|               +--blat_AD1_transcript_ZJU_g.hirsutum_cottongen_reftransV1.p97.len97.gff3.gz
+|               +--marker_alignment_blat_AD1_ZJU_SNP.p90.len97.gaplt2.gapszlt2.gff3.gz
+|               +--other_transcript_blat_AD1_TxJGI_g.hirsutum_cottongen_refTransV1.p97.len97.gff3.gz
+|               +--predicted_gene_alignment_Tx-JGI_G.hirsutum_v1.1.gene.gff3.gz
 |	+--meta/
 |               +--id_samples.txt
 |               +--general_expo_project.pdf
