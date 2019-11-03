@@ -1,8 +1,8 @@
 #### This directory contain: 
 
----> [Directory with files for do genome annotation](https://github.com/Melcatus/genomic_cotton/tree/master/data/annotation) ( all available files can be consulted in page of [CottonGen](https://www.cottongen.org/data/download/genome_tetraploid/AD1#CM) )
+---> [Directory with files for do genome annotation](https://github.com/Melcatus/genomic_cotton/tree/master/data/annotation) ( all available files can be consulted in thw webpage of [CottonGen](https://www.cottongen.org/data/download/genome_tetraploid/AD1#CM) )
 
-#### And, direct you to repository in where found the accessions analyze in this work.
+#### Below are the links to repositories of the accessions analyzed in this work.
 
 *This study include two types of data: resequencing of wilds and landraces individuals of Mexico and accession of others works*
 
@@ -33,4 +33,4 @@ The accessions analyzed of other works:
 [E04](https://trace.ncbi.nlm.nih.gov/Traces/sra/?run=SRR1536364)
 
 
-for identify of samples, review file [id_samples](https://github.com/Melcatus/genomic_cotton/blob/master/meta/id_samples.txt)
+To identify the samples, check the review file [id_samples](https://github.com/Melcatus/genomic_cotton/blob/master/meta/id_samples.txt)
