@@ -1,5 +1,5 @@
 # genomic_cotton
-This repository contain the scripts generated in the project *Genomics effects of domestication in Gossypium hirsutum* whitch is directed by this workflow focused of the analysis of structural variants in whole genome:
+This repository contain the scripts generated in the project *Genomics effects of domestication in Gossypium hirsutum* whitch uses this workflow to analyse structural variants in whole genome:
 
 ![textlink](https://github.com/Melcatus/genomic_cotton/blob/master/Workflow.png)
 
@@ -40,7 +40,7 @@ This repository contain the scripts generated in the project *Genomics effects o
 |               +--9_find_variants.sh
 |	+--data/
 |               +-- README_data.md
-|	      +--annotation/
+|	              +--annotation/
 |               +--README_annotation.md
 |               +--Predicted gene alignments_TM-1_V2.1.gene.gff.gz
 |               +--blat_AD1_transcript_ZJU_g.hirsutum_cottongen_reftransV1.p97.len97.gff3.gz
@@ -58,7 +58,7 @@ This repository contain the scripts generated in the project *Genomics effects o
 This directory contains the necessary scripts for do the structural variant analysis. Each script correspond to a step of workflow.
 Description each script:
 
-*  `1_download_seq.sh` to download sequences of projects in NCBI
+* `1_download_seq.sh` to download sequences of projects in NCBI
 * `2_fastqc_samples.sh` to do the quality analysis of sequencing with fastqc
 * `3_clean_mydata.sh` to data cleaning using trim_galore
 * `4_mapping.sh` to mapping samples against the reference genome whith bwa
@@ -71,11 +71,11 @@ Description each script:
 
 *[/data/](https://github.com/Melcatus/genomic_cotton/tree/master/data)*
 
-Contains the description about data obtain, and the links to repository of data in that you can found files .fastq
+Contains the description about the data obtained, and the links to the repository of data where you can found .fastq files
 
 *[/meta/](https://github.com/Melcatus/genomic_cotton/tree/master/meta)*
 
-Directory *meta* contain the additional information for management the data
+Directory *meta* contain the additional information about the management of data
 
 #### Credits
 Melania Vega
