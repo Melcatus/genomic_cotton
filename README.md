@@ -71,6 +71,7 @@ Description each script:
 * `7_convert_bam_fasta.sh` to convert files .bam generated mapping to .fasta
 * `8_quality_mapping.sh` to evaluate the quality of mapping
 * `9_find_variants.sh` to find structural variants
+* `10_merge_variants.sh` to merge vcf files
 
 
 *[/data/](https://github.com/Melcatus/genomic_cotton/tree/master/data)*
