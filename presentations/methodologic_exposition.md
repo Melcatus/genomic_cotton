@@ -80,7 +80,7 @@ It has been observed that the complexity of genomes (ploidy) and characteristics
 
 For example, in *Oryza*, it was used DELLY, GROM and LUMPY for longer variants and, MetaSV and MindTheGap for short insertions. The results showed 63 millon of SV (Fuentes et al. 2019), compared to the previous study in which they foun 90, 000 SV (Wang et al. 2018).
 
-![textlink](https://github.com/Melcatus/genomic_cotton/blob/master/F1.large.jpg)   
+![textlink](https://github.com/Melcatus/genomic_cotton/blob/master/presentations/figures/F1.large.jpg)   
 
 Figure 5. Distribution and classification of SVs. (A) Frequency of observations per SV cluster. Only 562 high-coverage samples were used for insertion detection. (B) Distribution of variant sizes by SV type. (C) Classification of variants in each peak (cluster frequency > 10 samples). (D) Frequencies of events with 98% sequence identity to known or potentially active TEs in rice. (Fuentes et al. 2019)
 
