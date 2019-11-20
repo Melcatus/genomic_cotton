@@ -38,6 +38,7 @@ This repository contain the scripts generated in the project *Genomics effects o
 |               +--7_convert_bam_fasta.sh
 |               +--8_quality_mapping.sh
 |               +--9_find_variants.sh
+|               +--10_merge_variants.sh
 |	+--data/
 |               +-- README_data.md
 |	              +--annotation/
@@ -49,7 +50,10 @@ This repository contain the scripts generated in the project *Genomics effects o
 |               +--predicted_gene_alignment_Tx-JGI_G.hirsutum_v1.1.gene.gff3.gz
 |	+--meta/
 |               +--id_samples.txt
+|	+--presentations/
 |               +--general_expo_project.pdf
+|               +--methodologic_exposition.md
+|        +--figures/
 ```
 
 
