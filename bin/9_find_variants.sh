@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# This script do find structural variants
+# This script do find structural variants with the software NGSEPcore_3.3.2
  
 # Create output directory 
 mkdir ../data/raw/mydata/clean/variants/
