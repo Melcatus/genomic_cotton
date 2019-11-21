@@ -54,6 +54,8 @@ This repository contain the scripts generated in the project *Genomics effects o
 |               +--general_expo_project.pdf
 |               +--methodologic_exposition.md
 |          +--figures/
+|	+--issues/
+|               +--issues_of_the_course.md
 ```
 
 
