@@ -1,4 +1,4 @@
-In the course ** Taller práctico de bioinformática Posgrado en Ciencias Biológicas UNAM ** I presented the next issues:
+In the course **Taller práctico de bioinformática Posgrado en Ciencias Biológicas UNAM** I presented the next issues:
 
 * [How do I loop with two variables](https://github.com/Melcatus/genomic_cotton/issues/4)
 
