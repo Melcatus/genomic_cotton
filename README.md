@@ -1,7 +1,11 @@
 # genomic_cotton
-This repository contain the scripts generated in the project *Genomics effects of domestication in Gossypium hirsutum* whitch uses this workflow to analyse structural variants in whole genome:
+This repository contain the scripts generated in the project *Genomic characterization of the wild-domesticated complex of Gossypium hirsutum in Mexico* whitch uses this workflow to analyse structural variants in whole genome:
 
 ![textlink](https://github.com/Melcatus/genomic_cotton/blob/master/workflow_3.png)
+
+And to assemble the cytoplasmic genomes with the next workflow: 
+
+![textlink](https://github.com/Melcatus/genomic_cotton/blob/master/work_flow_mito_chlo.jpg)
 
 #### Data characteristics
 - WGS
