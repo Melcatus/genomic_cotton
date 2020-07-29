@@ -25,7 +25,7 @@ done
 mkdir ../data/raw/published/trim/next
 mv ../data/raw/published/trim/*fq.gz  ../data/raw/published/trim/next
 
-# Mapping  
+# Mapping samples against the genome reference  
 for R in `ls ../data/raw/published/trim/next | grep -oE "\w*_" | uniq`;
 do bwa mem -t 10 -M ../data/raw/reference/TM-1_V2.1.fa ../data/raw/published/trim/next/${R}1.fq.gz ../data/raw/published/trim/next/${R}2.fq.gz > ../data/raw/published/trim/next/${R}.sam ;
 done
