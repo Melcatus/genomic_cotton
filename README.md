@@ -34,15 +34,14 @@ And to assemble the cytoplasmic genomes with the next workflow:
 +-- genomic_cotton
 |	+--bin/
 |               +--1_download_seq.sh
-|               +--2_fastqc_samples.sh
-|               +--3_clean_mydata.sh
+|               +--2_quality_samples.sh
+|               +--3_clean_data.sh
 |               +--4_mapping.sh
-|               +--5_convert_sam_to_bam.sh
-|               +--6_sort_sequences.sh
-|               +--7_convert_bam_fasta.sh
-|               +--8_quality_mapping.sh
-|               +--9_find_variants.sh
-|               +--10_merge_variants.sh
+|               +--5_sort_sequences.sh
+|               +--6_quality_mapping.sh
+|               +--7_find_variants.sh
+|               +--8_variant_annotation.sh
+
 |	+--data/
 |               +-- README_data.md
 |	              +--annotation/
