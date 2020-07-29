@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# This script is for data cleaning using trim_galore.
-# Run this script from directory ~/bin. The sequences they are in //data/raw/published/clean/next and ~/data/raw/resequenced/trim/next
+# This script is for evaluate the quality mapping.
+# Run this script from directory ~/bin. The sequences they are in ~/data/raw/published/clean/next and ~/data/raw/resequenced/trim/next
 # Prerequisites: install samtools 1.7 and qualimap v2.2.1
 
 
