@@ -32,6 +32,12 @@ Software to analyze the cytoplasmic genomes:
 
 [Novoplasty](https://github.com/ndierckx/NOVOPlasty)
 
+R packages:
+* ggplot2
+* gtable
+* grid
+* lattice
+
 #### Directories
 
  ##### Directory organization
