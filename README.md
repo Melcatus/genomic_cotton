@@ -3,7 +3,7 @@ This repository contain the scripts generated in the project *Genomic characteri
 
 ![textlink](https://github.com/Melcatus/genomic_cotton/blob/master/workflow_3.png)
 
-And to assemble the cytoplasmic genomes with the next workflow: 
+And to assemble the cytoplasmic genomes with the next workflow:
 
 ![textlink](https://github.com/Melcatus/genomic_cotton/blob/master/work_flow_mito_chlo.jpg)
 
@@ -14,6 +14,7 @@ And to assemble the cytoplasmic genomes with the next workflow:
 - Paired-end
 
 #### Prerequisites
+Software to analyze the nuclear genome:
 
 [fastqc_v0.11.8](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)
 
@@ -23,9 +24,13 @@ And to assemble the cytoplasmic genomes with the next workflow:
 
 [Samtools 1.7](http://samtools.sourceforge.net/)
 
+[Picard](https://broadinstitute.github.io/picard/)
+
 [FindVariants](http://ngsep.sourceforge.net/ManualNGSEP.htm#_Toc374444744)
 
-[CGTDV](http://circos.ca/software/)
+Software to analyze the cytoplasmic genomes:
+
+[Novoplasty](https://github.com/ndierckx/NOVOPlasty)
 
 #### Directories
 
@@ -41,7 +46,7 @@ And to assemble the cytoplasmic genomes with the next workflow:
 |               +--6_quality_mapping.sh
 |               +--7_find_variants.sh
 |               +--8_variant_annotation.sh
-
+|               +--9_barplot.R
 |	+--data/
 |               +-- README_data.md
 |	              +--annotation/
@@ -71,13 +76,11 @@ Description each script:
 * `2_fastqc_samples.sh` to do the quality analysis of sequencing with fastqc
 * `3_clean_mydata.sh` to data cleaning using trim_galore
 * `4_mapping.sh` to mapping samples against the reference genome whith bwa
-* `5_convert_sam_to_bam.sh` to onvert file .sam to .bam with samtools
-* `6_sort_sequences.sh` to order reads after mapping
-* `7_convert_bam_fasta.sh` to convert files .bam generated mapping to .fasta
-* `8_quality_mapping.sh` to evaluate the quality of mapping
-* `9_find_variants.sh` to find structural variants
-* `10_merge_variants.sh` to merge vcf files
-
+* `5_sort_sequences.sh` to convert file .sam to .bam, and to sort the aligmented genomes with Picard
+* `6_quality_mapping.sh` to evaluate the quality of mapping
+* `7_find_variants.sh` to identified structural variants
+* `8_variant_annotation.sh` to annotated each genomic variant
+* `9_barplot.R` to generated graphics with the number of genomic variants found
 
 *[/data/](https://github.com/Melcatus/genomic_cotton/tree/master/data)*
 
