@@ -1,4 +1,4 @@
-This project 
+This project involve the analysis of the next samples:
 ID	Sample 
 A01	Yucatán (R)
 A02	Bahía de Banderas (R)
