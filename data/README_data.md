@@ -1,4 +1,4 @@
-#### This directory contain: 
+#### This directory contain:
 
 ---> [Directory with files to do genome annotation](https://github.com/Melcatus/genomic_cotton/tree/master/data/annotation) ( all available files can be consulted in the webpage of [CottonGen](https://www.cottongen.org/data/download/genome_tetraploid/AD1#CM) )
 
@@ -6,17 +6,16 @@
 
 *This study include two types of data: resequencing of wilds and landraces individuals of Mexico and accession of others works*
 
-The resequencing samples are: 
+The resequencing samples are:
 
-A01
+A01-A03 correspond to wild genomes
 
-C01
+B01-B04 correspond to wild genomes with transgenes
 
-A02
+C01-C06 correspond to landraces genomes
 
-A03
+D01-D04 correspond to landraces genomes with transgenes
 
-C02
 
 The accessions analyzed of other works:  
 
@@ -32,5 +31,6 @@ The accessions analyzed of other works:
 
 [E04](https://trace.ncbi.nlm.nih.gov/Traces/sra/?run=SRR1536364)
 
+[F01](https://trace.ncbi.nlm.nih.gov/Traces/sra/?run=SRR8182563)
 
 To identify the samples, check the review file [id_samples](https://github.com/Melcatus/genomic_cotton/blob/master/meta/id_samples.txt)

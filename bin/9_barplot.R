@@ -20,7 +20,7 @@ graphic1
 #modified labels
 graphic1 <- graphic1 + xlab("Individuo")
 graphic1
-graphic1 <- graphic1 + ylab("Copy Number Variant")
+graphic1 <- graphic1 + ylab("Número de CNV")
 graphic1
 
 #### graphic of Deletions ####
@@ -36,7 +36,7 @@ graphic2
 #modified labels
 graphic2 <- graphic2 + xlab("Individuo")
 graphic2
-graphic2 <- graphic2 + ylab("Deleciones")
+graphic2 <- graphic2 + ylab("Número de deleciones")
 graphic2
 
 #### graphic of Insertions ####
@@ -52,7 +52,7 @@ graphic3
 #modified labels
 graphic3 <- graphic3 + xlab("Individuo")
 graphic3
-graphic3 <- graphic3 + ylab("Inserciones")
+graphic3 <- graphic3 + ylab("Número de inserciones")
 graphic3
 
 #### graphic of Insertions ####
@@ -68,7 +68,7 @@ graphic4
 #modified labels
 graphic4 <- graphic4 + xlab("Individuo")
 graphic4
-graphic4 <- graphic4 + ylab("Inversiones")
+graphic4 <- graphic4 + ylab("Número de inversiones")
 graphic4
 
 #### all graphics in only image ####
