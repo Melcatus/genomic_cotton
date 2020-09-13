@@ -1,4 +1,4 @@
-This project involve the analysis of the next samples:
+This project involve the analysis of the next samples (R= re-sequenced, P= published, T=with transgen):
 ID	Sample 
 A01	Yucatán (R)
 A02	Bahía de Banderas (R)
