@@ -1,22 +1,27 @@
+This project 
 ID	Sample 
-A01	GhY3-1
-C01	GhOaxC3
-A02	GhNM1
-A03	GhB11_2
-C02	GhGueV
-E01	ZM24
-E02	TM-1 
-A04	yucatanense 
-B01	Yucatan  
-B02	Yucatan 
-B03	Yucatan 
-B04	Yucatan
-C03	Guerrero 
-D01	Guerrero 
-D02	Oaxaca
-D03	Oaxaca
-D04	Oaxaca
-C04	Guerrero 
-E02	Stoneville_474
-E03	coker_312
-E04	Fibermax_832 
+A01	Yucatán (R)
+A02	Bahía de Banderas (R)
+A03	Baja California Sur (R)
+A04	Yucatán (P)
+A05	Guatemala (P)
+B01	Yucatán (T, R)
+B02	Yucatán (T, R)
+B03	Yucatán (T, R)
+B04	Yucatán (T, R)
+C01	Coyuchi (R)
+C02	Verde (R)
+C03	Verde (R)
+C04	Coyuchi (R)
+C05	Blanco (R)
+C06	Blanco (R)
+D01	Coyuchi (T, R)
+D02	Coyuchi (T, R)
+D03	Coyuchi (T, R)
+D04	Coyuchi (T, R)
+E01	TM1 (P)
+E02	Stoneville 474 (P)
+E03	Coker 312 (P)
+E04	Fibermax 832 (P)
+E05	Acala maxxa (P)
+F01	ZM24 (P)
