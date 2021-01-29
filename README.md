@@ -28,6 +28,12 @@ Software to analyze the nuclear genome:
 
 [FindVariants](http://ngsep.sourceforge.net/ManualNGSEP.htm#_Toc374444744)
 
+[vcftoolz](https://pypi.org/project/vcftoolz/)
+
+[SplitsTree](https://software-ab.informatik.uni-tuebingen.de/download/splitstree4/manual.pdf)
+
+[Flapjack](https://bivi.co/publication/flapjack-graphical-genotype-visualization) 
+
 Software to analyze the cytoplasmic genomes:
 
 [Novoplasty](https://github.com/ndierckx/NOVOPlasty)
@@ -53,6 +59,8 @@ R packages:
 |               +--7_find_variants.sh
 |               +--8_variant_annotation.sh
 |               +--9_barplot.R
+|               +--10_filter_variants.R
+|               +--11_distance_network.R
 |	+--data/
 |               +-- README_data.md
 |	              +--annotation/
