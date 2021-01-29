@@ -26,3 +26,9 @@ for R in `ls ../data/raw/new_genomes/trim/next | grep -oE "\w*_" | uniq`;
 do java -jar -Xms10000M -Xmx10000M ../NGSEPcore_3.3.0.jar SummaryStats -m 1 ../data/raw/new_genomes/trim/next/${R}annotated.vcf 1> ../data/raw/new_genomes/trim/next/${R}a.stats;
 done
 
+######## Merge vcf by population #######
+java -jar -Xms50000M -Xmx50000M ../NGSEPcore_3.3.0.jar MergeVCF ../data/raw/reference/TM-1_V2.1.fa.fai ../data/raw/new_genomes/trim/next/A01_3.vcf ../data/raw/new_genomes/trim/next/A02_3.vcf ../data/raw/published/clean/next/A04_3.vcf ../data/raw/published/clean/next/A05_3.vcf 1> ../data/raw/new_genomes/trim/next/wild.vcf 2> ../data/raw/new_genomes/trim/next/1populationwild.log
+
+java -jar -Xms50000M -Xmx50000M ../NGSEPcore_3.3.0.jar MergeVCF ../data/raw/new_genomes/trim/next/C01_3.vcf ../data/raw/new_genomes/trim/next/C02_3.vcf ../data/raw/new_genomes/trim/next/C03_3.vcf ../data/raw/new_genomes/trim/next/C04_3.vcf ../data/raw/new_genomes/trim/next/C05_3.vcf 1> ../data/raw/new_genomes/trim/next/landraces.vcf 2> ../data/raw/new_genomes/trim/next/1populationland.log
+
+java -jar -Xms50000M -Xmx50000M ../NGSEPcore_3.3.0.jar MergeVCF ../data/raw/published/clean/next/E01_3.vcf ../data/raw/published/clean/next/E02_3.vcf ../data/raw/published/clean/next/E03_3.vcf ../data/raw/published/clean/next/E04_3.vcf ../data/raw/published/clean/next/E05_3.vcf ../data/raw/published/clean/next/F01_3.vcf 1> ../data/raw/new_genomes/trim/next/commercial.vcf 2> ../data/raw/new_genomes/trim/next/1populationcomm.log
