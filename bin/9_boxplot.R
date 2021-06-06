@@ -99,3 +99,118 @@ kruskal.test(data3$Number.of.STRs ~ data3$Grade.of.management)
 png("short_variant_dom.png", width=13 *300, height=8*300, res= 300)
 graphic4 <- grid.arrange(graphic1, graphic2, graphic3, nrow = 1)
 dev.off()
+
+#### structural variants analysis
+######################## Differences in number of CNV by grade of management
+# Data
+Tabla1 <- read.table("cnv_dom.txt", head=T)
+
+# Median
+aggregate(Number_of_CNV ~ Grade_of_management, data = Tabla1, FUN = median)
+# Standar deviation
+aggregate(Number_of_CNV ~ Grade_of_management, data = Tabla1, FUN = sd)
+# Boxplot
+graphic1 <- ggplot(data = Tabla1, mapping = aes(x = Grade_of_management, y = Number_of_CNV, colour = Grade_of_management)) +
+  geom_point() +
+  geom_boxplot() +
+  scale_colour_manual(values=c("darkblue", "gold", "forestgreen")) +
+  theme_bw() +
+  theme(panel.border = element_blank(), panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(), axis.line = element_line(colour = "black"), axis.title.x = element_text(color="white", size=8, face="bold"),
+        axis.title.y = element_text(color="black", size=10, face="bold")) +
+  theme(legend.position = "none")
+graphic1
+
+png("dome_CNV_boxplot.png",608,445)
+print(graphic1)
+dev.off()
+# Test of distribution of data and significance test
+x <- Tabla1$Number_of_CNV
+shapiro.test(x)
+anova <- aov(Tabla1$Number_of_CNV ~ Tabla1$Grade_of_management)
+summary(anova)
+
+######################## Differences in number of DEL by grade of management
+# Data
+Tabla1 <- read.table("del_dom.txt", head=T)
+
+# Median
+aggregate(Number_of_DEL ~ Grade_of_management, data = Tabla1, FUN = median)
+# Standar deviation
+aggregate(Number_of_DEL ~ Grade_of_management, data = Tabla1, FUN = sd)
+# Boxplot
+graphic1 <- ggplot(data = Tabla1, mapping = aes(x = Grade_of_management, y = Number_of_DEL, colour = Grade_of_management)) +
+  geom_point() +
+  geom_boxplot() +
+  scale_colour_manual(values=c("darkblue", "gold", "forestgreen")) +
+  theme_bw() +
+  theme(panel.border = element_blank(), panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(), axis.line = element_line(colour = "black"), axis.title.x = element_text(color="white", size=8, face="bold"),
+        axis.title.y = element_text(color="black", size=10, face="bold")) +
+  theme(legend.position = "none")
+graphic1
+
+png("dome_DEL_boxplot.png",608,445)
+print(graphic1)
+dev.off()
+# Test of distribution of data and significance test
+x <- Tabla1$Number_of_DEL
+shapiro.test(x)
+kruskal.test(Tabla1$Number_of_DEL ~ Tabla1$Grade_of_management)
+
+######################## Differences in number of INS by grade of management
+# Data
+Tabla1 <- read.table("ins_dom.txt", head=T)
+
+# Median
+aggregate(Number_of_INS ~ Grade_of_management, data = Tabla1, FUN = median)
+# Standar deviation
+aggregate(Number_of_INS ~ Grade_of_management, data = Tabla1, FUN = sd)
+# Boxplot
+graphic1 <- ggplot(data = Tabla1, mapping = aes(x = Grade_of_management, y = Number_of_INS, colour = Grade_of_management)) +
+  geom_point() +
+  geom_boxplot() +
+  scale_colour_manual(values=c("darkblue", "gold", "forestgreen")) +
+  theme_bw() +
+  theme(panel.border = element_blank(), panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(), axis.line = element_line(colour = "black"), axis.title.x = element_text(color="white", size=8, face="bold"),
+        axis.title.y = element_text(color="black", size=10, face="bold")) +
+  theme(legend.position = "none")
+graphic1
+
+png("dome_INS_boxplot.png",608,445)
+print(graphic1)
+dev.off()
+# Test of distribution of data and significance test
+x <- Tabla1$Number_of_INS
+shapiro.test(x)
+kruskal.test(Tabla1$Number_of_INS ~ Tabla1$Grade_of_management)
+
+######################## Differences in number of INV by grade of management
+# Data
+Tabla1 <- read.table("inv_dom.txt", head=T)
+
+# Median
+aggregate(Number_of_INV ~ Grade_of_management, data = Tabla1, FUN = median)
+# Standar deviation
+aggregate(Number_of_INV ~ Grade_of_management, data = Tabla1, FUN = sd)
+# Boxplot
+graphic1 <- ggplot(data = Tabla1, mapping = aes(x = Grade_of_management, y = Number_of_INV, colour = Grade_of_management)) +
+  geom_point() +
+  geom_boxplot() +
+  scale_colour_manual(values=c("darkblue", "gold", "forestgreen")) +
+  theme_bw() +
+  theme(panel.border = element_blank(), panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(), axis.line = element_line(colour = "black"), axis.title.x = element_text(color="white", size=8, face="bold"),
+        axis.title.y = element_text(color="black", size=10, face="bold")) +
+  theme(legend.position = "none")
+graphic1
+
+png("dome_INV_boxplot.png",608,445)
+print(graphic1)
+dev.off()
+# Test of distribution of data and significance test
+x <- Tabla1$Number_of_INV
+shapiro.test(x)
+anova <- aov(Tabla1$Number_of_INV ~ Tabla1$Grade_of_management)
+summary(anova)
