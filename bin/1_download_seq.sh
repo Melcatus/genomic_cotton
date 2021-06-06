@@ -2,7 +2,7 @@
 
 #This script download sequences of projects in NCBI that contain binary files and convert this is files in files .fasta
 
-for i in SRR1975549 SRR1536367 SRR1536365.2 SRR1536364.2 SRR1536369.2 SRR1580592.1;
+for i in SRR1534688 SRR1975549 SRR1536369 SRR8182563 SRR1536367 SRR1536365 SRR1536364 SRR617482;
 do fastq-dump --split-files --gzip $i 
 done
 
