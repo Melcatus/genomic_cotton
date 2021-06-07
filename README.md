@@ -44,7 +44,7 @@ Software to analyze the chloroplast genomes:
 
 [CPGAVAS2](http://47.90.241.85:16019/analyzer/home)
 
-[Mauve 2.4.0] (http://darlinglab.org/mauve/mauve.html)
+[Mauve 2.4.0](http://darlinglab.org/mauve/mauve.html)
 
 [MAFFT 7.0](https://mafft.cbrc.jp/alignment/software/)
 
