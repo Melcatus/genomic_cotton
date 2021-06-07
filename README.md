@@ -5,7 +5,6 @@ This repository contain the scripts generated in the project *Genomic characteri
 
 And to assemble the cytoplasmic genomes with the next workflow:
 
-![textlink](https://github.com/Melcatus/genomic_cotton/blob/master/work_flow_mito_chlo.jpg)
 
 #### Data characteristics
 - WGS
