@@ -34,9 +34,21 @@ Software to analyze the nuclear genome:
 
 [Flapjack](https://bivi.co/publication/flapjack-graphical-genotype-visualization) 
 
-Software to analyze the cytoplasmic genomes:
+[Ugene](http://ugene.net/)
 
-[Novoplasty](https://github.com/ndierckx/NOVOPlasty)
+Software to analyze the chloroplast genomes:
+
+[GetOrganelle 1.7.3.4 ](https://github.com/Kinggerm/GetOrganelle)
+
+[GeSeq](https://chlorobox.mpimp-golm.mpg.de/geseq.html)
+
+[CPGAVAS2](http://47.90.241.85:16019/analyzer/home)
+
+[Mauve 2.4.0] (http://darlinglab.org/mauve/mauve.html)
+
+[MAFFT 7.0](https://mafft.cbrc.jp/alignment/software/)
+
+[MEGA-X 10.2.4](https://www.megasoftware.net/history)
 
 R packages:
 * ggplot2
@@ -58,18 +70,20 @@ R packages:
 |               +--6_quality_mapping.sh
 |               +--7_find_variants.sh
 |               +--8_variant_annotation.sh
-|               +--9_barplot.R
+|               +--9_boxplot.R
 |               +--10_filter_variants.R
+|               +--10_1_filter_overlapped.R
 |               +--11_distance_network.R
 |	+--data/
+|               +-- transgen_db.fasta
 |               +-- README_data.md
 |	              +--annotation/
-|               +--README_annotation.md
-|               +--Predicted gene alignments_TM-1_V2.1.gene.gff.gz
-|               +--blat_AD1_transcript_ZJU_g.hirsutum_cottongen_reftransV1.p97.len97.gff3.gz
-|               +--marker_alignment_blat_AD1_ZJU_SNP.p90.len97.gaplt2.gapszlt2.gff3.gz
-|               +--other_transcript_blat_AD1_TxJGI_g.hirsutum_cottongen_refTransV1.p97.len97.gff3.gz
-|               +--predicted_gene_alignment_Tx-JGI_G.hirsutum_v1.1.gene.gff3.gz
+|                    	  +--README_annotation.md
+|                         +--Predicted gene alignments_TM-1_V2.1.gene.gff.gz
+|                         +--blat_AD1_transcript_ZJU_g.hirsutum_cottongen_reftransV1.p97.len97.gff3.gz
+|                         +--marker_alignment_blat_AD1_ZJU_SNP.p90.len97.gaplt2.gapszlt2.gff3.gz
+|                         +--other_transcript_blat_AD1_TxJGI_g.hirsutum_cottongen_refTransV1.p97.len97.gff3.gz
+|                         +--predicted_gene_alignment_Tx-JGI_G.hirsutum_v1.1.gene.gff3.gz
 |	+--meta/
 |               +--id_samples.txt
 |	+--presentations/
@@ -94,7 +108,8 @@ Description each script:
 * `6_quality_mapping.sh` to evaluate the quality of mapping
 * `7_find_variants.sh` to identified structural variants
 * `8_variant_annotation.sh` to annotated each genomic variant
-* `9_barplot.R` to generated graphics with the number of genomic variants found
+* `9_boxplot.R` to generated graphics with the number of genomic variants found
+*
 
 *[/data/](https://github.com/Melcatus/genomic_cotton/tree/master/data)*
 
