@@ -1,10 +1,9 @@
 # genomic_cotton
-This repository contain the scripts generated in the project *Genomic characterization of the wild-to-domesticated complex of Gossypium hirsutum in Mexico* whitch uses this workflow to analyse structural variants in whole genome:
+This repository contain the scripts generated in the project *Genomic characterization of the wild-to-domesticated complex of Gossypium hirsutum in Mexico* whitch is subdivided in three sections:
 
-![textlink](https://github.com/Melcatus/genomic_cotton/blob/master/workflow_3.png)
-
-And to assemble the cytoplasmic genomes with the next workflow:
-
+1) Analysis of chloroplast genomes
+2) Analysis of nuclear genomes
+3) Location of transgenes in the genomes
 
 #### Data characteristics
 - WGS
@@ -12,30 +11,18 @@ And to assemble the cytoplasmic genomes with the next workflow:
 - Library TruSeq DNA PCR free
 - Paired-end
 
+#### Graphic workflow by section
+
+*Analysis of chloroplast genomes*
+
+*Analysis of nuclear genomes*
+![textlink](https://github.com/Melcatus/genomic_cotton/blob/master/workflow_3.png)
+
+*Location of transgenes in the genomes*
+
+
 #### Prerequisites
-Software to analyze the nuclear genome:
-
-[fastqc_v0.11.8](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)
-
-[trim_galore 0.6.0_dev](https://www.bioinformatics.babraham.ac.uk/projects/trim_galore/)
-
-[bwa0.7.17-r1188](http://bio-bwa.sourceforge.net/)
-
-[Samtools 1.7](http://samtools.sourceforge.net/)
-
-[Picard](https://broadinstitute.github.io/picard/)
-
-[FindVariants](http://ngsep.sourceforge.net/ManualNGSEP.htm#_Toc374444744)
-
-[vcftoolz](https://pypi.org/project/vcftoolz/)
-
-[SplitsTree](https://software-ab.informatik.uni-tuebingen.de/download/splitstree4/manual.pdf)
-
-[Flapjack](https://bivi.co/publication/flapjack-graphical-genotype-visualization) 
-
-[Ugene](http://ugene.net/)
-
-Software to analyze the chloroplast genomes:
+*Software to analyze the chloroplast genomes:*
 
 [GetOrganelle 1.7.3.4 ](https://github.com/Kinggerm/GetOrganelle)
 
@@ -49,11 +36,39 @@ Software to analyze the chloroplast genomes:
 
 [MEGA-X 10.2.4](https://www.megasoftware.net/history)
 
+[SplitsTree](https://software-ab.informatik.uni-tuebingen.de/download/splitstree4/manual.pdf)
+
+[BEAST](https://beast.community/)
+
+*Software to analyze the nuclear genome:*
+
+[fastqc_v0.11.8](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)
+
+[trim_galore 0.6.0_dev](https://www.bioinformatics.babraham.ac.uk/projects/trim_galore/)
+
+[bwa0.7.17-r1188](http://bio-bwa.sourceforge.net/)
+
+[Samtools 1.7](http://samtools.sourceforge.net/)
+
+[Picard](https://broadinstitute.github.io/picard/)
+
+[NGSEP](http://ngsep.sourceforge.net/ManualNGSEP.htm#_Toc374444744)
+
+[SplitsTree](https://software-ab.informatik.uni-tuebingen.de/download/splitstree4/manual.pdf)
+
+[bedmap 2.4.40](https://bedops.readthedocs.io/en/latest/content/reference/statistics/bedmap.html)
+
+
 R packages:
 * ggplot2
 * gtable
 * grid
 * lattice
+* phyloch
+* strap
+* phytools
+* tidyverse
+* GenomicRanges
 
 #### Directories
 
@@ -62,8 +77,10 @@ R packages:
 +-- genomic_cotton
 |	+--bin/
 |               +--1_download_seq.sh
+|               +--1.1_transgenes_blast.sh
 |               +--2_quality_samples.sh
-|               +--3_clean_data.sh
+|               +--3c_assembly_chloroplast.sh
+|               +--3n_clean_data.sh
 |               +--4_mapping.sh
 |               +--5_sort_sequences.sh
 |               +--6_quality_mapping.sh
@@ -85,12 +102,6 @@ R packages:
 |                         +--predicted_gene_alignment_Tx-JGI_G.hirsutum_v1.1.gene.gff3.gz
 |	+--meta/
 |               +--id_samples.txt
-|	+--presentations/
-|               +--general_expo_project.pdf
-|               +--methodologic_exposition.md
-|          +--figures/
-|	+--issues/
-|               +--issues_of_the_course.md
 ```
 
 
@@ -100,8 +111,10 @@ This directory contains the necessary scripts for do the structural variant anal
 Description each script:
 
 * `1_download_seq.sh` to download sequences of projects in NCBI
+* `1.1_transgenes_blast.sh` to search of transgenes sequences genomes samples
 * `2_fastqc_samples.sh` to do the quality analysis of sequencing with fastqc
-* `3_clean_mydata.sh` to data cleaning using trim_galore
+* `3c_assembly_chloroplast.sh` to do the assembly of chloroplast genomes
+* `3n_clean_mydata.sh` to data cleaning using trim_galore
 * `4_mapping.sh` to mapping samples against the reference genome whith bwa
 * `5_sort_sequences.sh` to convert file .sam to .bam, and to sort the aligmented genomes with Picard
 * `6_quality_mapping.sh` to evaluate the quality of mapping
