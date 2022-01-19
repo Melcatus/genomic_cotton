@@ -72,7 +72,8 @@ R packages:
 
 #### Directories
 
- ##### Directory organization
+ ##### Directory organization where the letter c and n are used after the number to indicate whether the script corresponds to the chloroplast or nuclear genome analysis, respectively:
+
  ```
 +-- genomic_cotton
 |	+--bin/
@@ -81,14 +82,19 @@ R packages:
 |               +--2_quality_samples.sh
 |               +--3c_assembly_chloroplast.sh
 |               +--3n_clean_data.sh
-|               +--4_mapping.sh
-|               +--5_sort_sequences.sh
-|               +--6_quality_mapping.sh
-|               +--7_find_variants.sh
-|               +--8_variant_annotation.sh
+|               +--4c_mapping.sh
+|               +--4n_mapping.sh
+|               +--5c_sort_sequences.sh
+|               +--5n_sort_sequences.sh
+|               +--6c_quality_mapping.sh
+|               +--6n_quality_mapping.sh
+|               +--7c_find_variants.sh
+|               +--7n_find_variants.sh
+|               +--8c_variant_annotation.sh
+|               +--8n_variant_annotation.sh
 |               +--9_boxplot.R
 |               +--10_filter_variants.R
-|               +--10_1_filter_overlapped.R
+|               +--10.1_filter_overlapped.R
 |               +--11_distance_network.R
 |	+--data/
 |               +-- transgen_db.fasta
@@ -114,12 +120,12 @@ Description each script:
 * `1.1_transgenes_blast.sh` to search of transgenes sequences genomes samples
 * `2_fastqc_samples.sh` to do the quality analysis of sequencing with fastqc
 * `3c_assembly_chloroplast.sh` to do the assembly of chloroplast genomes
-* `3n_clean_mydata.sh` to data cleaning using trim_galore
-* `4_mapping.sh` to mapping samples against the reference genome whith bwa
-* `5_sort_sequences.sh` to convert file .sam to .bam, and to sort the aligmented genomes with Picard
-* `6_quality_mapping.sh` to evaluate the quality of mapping
-* `7_find_variants.sh` to identified structural variants
-* `8_variant_annotation.sh` to annotated each genomic variant
+* `3n_clean_data.sh` to clean sequences with low quality
+* `4*_mapping.sh`  to align sequences to reference genomes
+* `5*_sort_sequences.sh` to convert file .sam to .bam, and to sort the aligmented genomes with Picard
+* `6*_quality_mapping.sh` to evaluate the quality of mapping
+* `7*_find_variants.sh` to identified genomic variants
+* `8*_variant_annotation.sh` to annotated each genomic variant
 * `9_boxplot.R` to generated graphics with the number of genomic variants found
 *
 
@@ -132,4 +138,4 @@ Contains the description about the data obtained, and the links to the repositor
 Directory *meta* contain the additional information about the management of data
 
 #### Credits
-Melania Vega
+M. S. Melania Vega
