@@ -2,28 +2,18 @@
 
 # This script is to variant annotation.
 # Run this script from directory ~/bin. The sequences they are in ~/data/raw/published/clean/next and ~/data/raw/resequenced/trim/next
-# Prerequisites: install NGSEPcore 3.3.0 
+# Prerequisites: install NGSEPcore 4.0.3 
 
-######### Published genomes #########
-# Annotation
-for i in `ls ../data/raw/published/clean/next | grep -oE "\w*_" | uniq`;
-do java -jar -Xms16000M -Xmx16000M ../NGSEPcore_3.3.0.jar Annotate ../data/raw/published/clean/next/${i}RG3.vcf ../data/raw/reference/gene.Ghir.ZJU.gff3 ../data/raw/reference/TM-1_V2.1.fa 1> ../data/raw/published/clean/next/${i}annotated.vcf;
-done 
 
-## Statistics
-for i in `ls ../data/raw/published/clean/next | grep -oE "\w*_" | uniq`;
-do java -jar -Xms16000M -Xmx16000M ../NGSEPcore_3.3.0.jar SummaryStats -m 1 ../data/raw/published/clean/next/${i}annotated.vcf 1> ../data/raw/published/clean/next/${i}.stats;
-done 
 
-######### Resequenced genomes #########
-# Annotation
+### my genomes
 for R in `ls ../data/raw/new_genomes/trim/next | grep -oE "\w*_" | uniq`;
-do java -jar -Xms10000M -Xmx10000M ../NGSEPcore_3.3.0.jar Annotate ../data/raw/new_genomes/trim/next/${R}3.vcf ../data/raw/reference/gene.Ghir.ZJU.gff3 ../data/raw/reference/TM-1_V2.1.fa 1> ../data/raw/new_genomes/trim/next/${R}annotated.vcf;
+do java -jar -Xms50000M -Xmx50000M ../NGSEPcore_4.0.3.jar VCFAnnotate -i ../data/raw/new_genomes/trim/next/${R}3.vcf -t ../data/raw/reference/TM-1_V2.1.gene2.gff3 -r ../data/raw/reference/TM-1_V2.1.fa -o ../data/raw/new_genomes/trim/next/${R}annotate.vcf;
 done
 
-## Statistics
-for R in `ls ../data/raw/new_genomes/trim/next | grep -oE "\w*_" | uniq`;
-do java -jar -Xms10000M -Xmx10000M ../NGSEPcore_3.3.0.jar SummaryStats -m 1 ../data/raw/new_genomes/trim/next/${R}annotated.vcf 1> ../data/raw/new_genomes/trim/next/${R}a.stats;
+### published genomes
+for R in `ls ../data/raw/published/clean/next/ | grep -oE "\w*_" | uniq`;
+do java -jar -Xms50000M -Xmx50000M ../NGSEPcore_4.0.3.jar VCFAnnotate -i ../data/raw/published/clean/next/${R}3.vcf -t ../data/raw/reference/TM-1_V2.1.gene2.gff3 -r ../data/raw/reference/TM-1_V2.1.fa -o ../data/raw/published/clean/next/${R}annotate.vcf;
 done
 
 ######## Merge vcf by population #######
