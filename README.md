@@ -13,12 +13,9 @@ This repository contain the scripts generated in the project *Genomic characteri
 
 #### Graphic workflow by section
 
-*Analysis of chloroplast genomes*
 
-*Analysis of nuclear genomes*
-![textlink](https://github.com/Melcatus/genomic_cotton/blob/master/workflow_3.png)
+![textlink](https://github.com/Melcatus/genomic_cotton/blob/master/workflow.png)
 
-*Location of transgenes in the genomes*
 
 
 #### Prerequisites
@@ -78,8 +75,8 @@ R packages:
 +-- genomic_cotton
 |	+--bin/
 |               +--1_download_seq.sh
-|               +--1.1_transgenes_blast.sh
 |               +--2_quality_samples.sh
+|               +--3_transgenes_blast.sh
 |               +--3c_assembly_chloroplast.sh
 |               +--3n_clean_data.sh
 |               +--4c_mapping.sh
@@ -91,11 +88,8 @@ R packages:
 |               +--7c_find_variants.sh
 |               +--7n_find_variants.sh
 |               +--8c_variant_annotation.sh
-|               +--8n_variant_annotation.sh
+|               +--8n_short_variant_annotation.sh
 |               +--9_boxplot.R
-|               +--10_filter_variants.R
-|               +--10.1_filter_overlapped.R
-|               +--11_distance_network.R
 |	+--data/
 |               +-- transgen_db.fasta
 |               +-- README_data.md
@@ -106,8 +100,9 @@ R packages:
 |                         +--marker_alignment_blat_AD1_ZJU_SNP.p90.len97.gaplt2.gapszlt2.gff3.gz
 |                         +--other_transcript_blat_AD1_TxJGI_g.hirsutum_cottongen_refTransV1.p97.len97.gff3.gz
 |                         +--predicted_gene_alignment_Tx-JGI_G.hirsutum_v1.1.gene.gff3.gz
+|                         +--annotation.bed****
 |	+--meta/
-|               +--id_samples.txt
+|               +--id_samples.txt****
 ```
 
 
