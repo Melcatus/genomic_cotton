@@ -1,0 +1,57 @@
+plink2 --vcf complex2.vcf --maf 0.05 --geno .2 --chr-set 26 --recode vcf --out myfinaldata3
+
+plink2 --vcf complex2.vcf --maf 0.05 --geno .2 --chr-set 26 --make-bed --out myfinaldata4
+
+for K in 1 2 3 4 5 6 7 8 9 10; do ~/Descargas/admixture_linux-1.3.0/admixture32  --cv=10 myfinaldata4.bed  $K | tee log${K}.out; done
+###mover resultados a una nueva carpeta y graficar el valor de variación en k
+###el valor menor es el valor de K que explica mejor el comportamiento de los datos
+grep -h "CV" log* | sed 's/:/\ \t/' > CV_values
+install.packages('vcfR')
+install.packages("usethis")
+install.packages("devtools", dependencies=TRUE)
+library(usethis)
+library(tidyr)
+library(devtools)
+library(vcfR)
+library(adegenet)
+library(hierfstat)
+library(ggplot2)
+
+complex2.vcf <- read.vcfR("myfinaldata3.vcf")
+C.datos.ind <- vcfR2genind(complex2.vcf)
+
+Labels.C_datos <- read.table("datos_locs.txt",sep="\t",header=T)
+pop(C.datos.ind)<-Labels.C_datos$Population
+C.datos.fstat <- genind2hierfstat(C.datos.ind)
+Basic.SS <-basic.stats(C.datos.ind)
+Basic.SS.ind <- summary(C.datos.ind)
+
+#Fst's
+C.datos.fst <- pairwise.neifst(C.datos.fstat)
+C.datos.WCfst <- pairwise.WCfst(C.datos.fstat)
+corrplot(C.datos.fst,is.corr=FALSE,method="square",type="lower",col=rev(heat.colors(100)),diag=FALSE)
+########Para graficar resultados de admixture
+
+install.packages("reshape2")
+install.packages("gridExtra")
+install.packages("ggplot2")
+library(reshape2)
+library(gridExtra)
+library(ggplot2)
+
+CVs <- read.table("CV_values")
+CVs$V3 <- factor(x=CVs$V3,levels=c("(K=1)","(K=2)","(K=3)","(K=4)","(K=5)","(K=6)","(K=7)","(K=8)","(K=9)","(K=10)"))
+
+ggplot(CVs,aes(x=as.factor(V3),y=V4,group=1))+geom_point()+geom_line()+ylab("CV")+theme_light()+theme(axis.title.x=element_blank(),axis.text.x=element_text(size=11),axis.title.y=element_text(size=13),axis.text.y=element_text(size=11))
+
+K10<-read.table("myfinaldata4.10.Q")
+
+#Ponemos la info 
+K10$ind <- Labels.C_datos$Sample
+K10$loc <-Labels.C_datos$Population
+
+#Generamos un formato amigable con ggplot
+K10.df <-melt(K10)
+
+#
+ggplot(data=K10.df,aes(x=ind,y=value,fill=variable))+geom_bar(stat="identity")+scale_fill_manual(values=c("red","skyblue","green","purple","yellow","blue4","orange", "brown1", "blue1", "darkmagenta"))+facet_grid(~loc,scales="free_x",labeller = label_wrap_gen(multi_line=FALSE))+ylab("K10")+theme_minimal()+theme(axis.text.x=element_text(size=5,angle=45,hjust=1),axis.text.y=element_text(size=11),legend.position="none",axis.title.x=element_blank(),axis.title.y=element_text(size=15),strip.text.x=element_text(size=14))
